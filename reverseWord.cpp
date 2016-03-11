@@ -26,13 +26,14 @@ int main()
     int counter = 0;
 	string sentence;
 	ifstream streamIn;
-	streamIn.open("test.txt");
+	streamIn.open("test2.txt");
 
 	int cases;
 	streamIn >> cases;
+	streamIn.ignore();
 
 
-	while(!streamIn.eof())
+	while(!streamIn.eof()&& counter!=cases)
 	{
 	    counter++;
         cout <<"Case #" << counter << ": ";
